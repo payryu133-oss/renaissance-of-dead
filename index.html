@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RENAISSANCE OF DEAD — REGISTER</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0a0c10;
+            --panel-bg: rgba(18, 22, 31, 0.85);
+            --border-color: rgba(255, 255, 255, 0.1);
+            --text-main: #e2e8f0;
+            --orange-glow: #ff6b00;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: var(--bg-color);
+            background-image: 
+                radial-gradient(circle at 50% 0%, rgba(255, 107, 0, 0.2) 0%, transparent 60%),
+                radial-gradient(circle at 100% 100%, rgba(255, 42, 95, 0.12) 0%, transparent 50%);
+            color: var(--text-main);
+            font-family: 'Kanit', 'Chakra Petch', sans-serif;
+            line-height: 1.6;
+            padding: 15px 12px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container { 
+            width: 100%; 
+            max-width: 500px;
+            margin: 0 auto; 
+        }
+
+        .hero-banner {
+            background: rgba(15, 17, 23, 0.9);
+            border: 1px solid rgba(255, 107, 0, 0.4);
+            border-radius: 14px;
+            padding: 30px 20px;
+            text-align: center;
+            position: relative;
+            backdrop-filter: blur(12px);
+            box-shadow: 0 0 25px rgba(255, 107, 0, 0.15);
+        }
+
+        .hero-banner::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--orange-glow), transparent);
+        }
+
+        .hero-title {
+            font-family: 'Chakra Petch', sans-serif;
+            font-size: 1.7rem;
+            font-weight: 700;
+            color: #fff;
+            text-shadow: 0 0 10px rgba(255, 107, 0, 0.6);
+            letter-spacing: 1px;
+            margin-bottom: 6px;
+        }
+
+        .hero-subtitle {
+            font-size: 0.85rem;
+            color: var(--orange-glow);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+
+        /* ปุ่มลิงก์ลงทะเบียน */
+        .register-btn {
+            display: block;
+            width: 100%;
+            background: linear-gradient(135deg, var(--orange-glow), #d97706);
+            color: #fff;
+            text-decoration: none;
+            font-family: 'Chakra Petch', sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+            padding: 14px 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(255, 107, 0, 0.4);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            text-align: center;
+        }
+
+        .register-btn:active {
+            transform: scale(0.98);
+            box-shadow: 0 0 10px rgba(255, 107, 0, 0.6);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="hero-banner">
+        <div class="hero-title">☣ 𝐑𝐄𝐍𝐀𝐈𝐒𝐒𝐀𝐍𝐂𝐄 𝐎𝐅 𝐃𝐄𝐀𝐃 ☣</div>
+        <div class="hero-subtitle">「  Registration 」</div>
+        
+        <!-- ปุ่มลงทะเบียนตัวละคร -->
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSenO85a7KhcU_12RvsuGGRk_MYEr5MKYEap4FU2y0yd8g5wcw/viewform?usp=dialog" target="_blank" class="register-btn">
+            📝 ลงทะเบียน
+        </a>
+    </div>
+
+</div>
+
+</body>
+</html>
